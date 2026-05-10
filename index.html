@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovementLAB | Upgrade Your Anatomy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Oswald:wght@500;700&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --charcoal: #1A1A1A;
+            --gold: #C5A048;
+            --white: #FFFFFF;
+        }
+        body {
+            background-color: var(--charcoal);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-heading {
+            font-family: 'Oswald', sans-serif;
+        }
+        /* Montserrat 300 s uskim spacingom za "Movement" */
+        .font-brand-thin {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            letter-spacing: -0.05em;
+        }
+        /* Montserrat 700 za "LAB" - Razmaknutija slova */
+        .font-brand-bold {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .gold-text {
+            color: var(--gold);
+        }
+        .gold-bg {
+            background-color: var(--gold);
+        }
+        .btn-transition {
+            transition: all 0.3s ease;
+        }
+        .logo-style {
+            letter-spacing: normal;
+        }
+        .benefit-card:hover {
+            border-color: var(--gold);
+            background-color: #fcfcfc;
+        }
+        .contact-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid var(--gold);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigacija -->
+    <nav class="fixed w-full z-50 bg-[#1A1A1A]/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex flex-col leading-none">
+                <div class="text-2xl logo-style gold-text">
+                    <span class="font-brand-thin">Movement</span><span class="font-brand-bold">LAB</span>
+                </div>
+                <div class="text-[9px] uppercase tracking-[0.3em] text-gray-400 mt-1 font-medium">
+                    Upgrade Your Anatomy
+                </div>
+            </div>
+            <div class="hidden lg:flex space-x-6 text-[10px] uppercase tracking-[0.2em] font-medium">
+                <a href="#metodologija" class="hover:text-[#C5A048] transition-colors">Metodologija</a>
+                <a href="#za-koga" class="hover:text-[#C5A048] transition-colors">Za koga?</a>
+                <a href="#rezultati" class="hover:text-[#C5A048] transition-colors">Rezultati</a>
+                <a href="#pogodnosti" class="hover:text-[#C5A048] transition-colors">Pogodnosti</a>
+                <a href="#clanarina" class="hover:text-[#C5A048] transition-colors">Članarina</a>
+                <a href="#kontakt" class="hover:text-[#C5A048] transition-colors">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sekcija -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden text-white">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1920" alt="[Slika treninga mobilnosti]" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-block border border-gold px-4 py-1 mb-8">
+                <span class="text-gold text-[10px] uppercase tracking-[0.4em] font-bold">Upgrade Your Anatomy</span>
+            </div>
+            <h1 class="text-6xl md:text-9xl mb-6 leading-none tracking-tighter gold-text">
+                <span class="font-brand-thin">Movement</span><span class="font-brand-bold">LAB</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto mb-12 font-light leading-relaxed">
+                Programi mobilnosti <span class="text-white font-medium italic">najvišeg svjetskog standarda</span> koji ti pomažu da se krećeš bez boli, unaprijediš performans i izgradiš dugotrajnu snagu.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://buy.stripe.com/6oU9AU1KudTp8by4J46kg0r" class="btn-transition gold-bg text-black font-heading font-bold py-5 px-10 text-lg hover:brightness-110 active:scale-95 uppercase tracking-wider">
+                    Mjesečna članarina
+                </a>
+                <a href="https://buy.stripe.com/fZu9AU88Sg1x3Vib7s6kg0s" class="btn-transition border-2 border-[#C5A048] gold-text font-heading font-bold py-5 px-10 text-lg hover:bg-[#C5A048] hover:text-black active:scale-95 uppercase tracking-wider">
+                    Tromjesečna članarina
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zašto MovementLAB -->
+    <section id="metodologija" class="py-24 bg-white text-[#1A1A1A]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-6xl font-bold mb-8 leading-none uppercase text-black">
+                        <span class="font-heading italic">ZAŠTO</span> <br>
+                        <span class="font-brand-thin text-3xl md:text-5xl block mt-2">Movement</span><span class="font-brand-bold text-3xl md:text-5xl">LAB?</span>
+                    </h2>
+                    <p class="text-xl text-gray-700 mb-8 leading-relaxed italic">
+                        Postigni vrhunsku funkcionalnost tijela kroz sustavan pristup kretanju.
+                    </p>
+                </div>
+                <div class="space-y-12 text-black">
+                    <div class="flex gap-6">
+                        <div class="font-heading text-4xl gold-text font-bold">01</div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold mb-2 uppercase">KREĆI SE BEZ BOLI</h3>
+                            <p class="text-gray-700">Nauči ciljane vježbe mobilnosti koje rješavaju korijenske uzroke tvojih problema, a ne samo simptome.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="font-heading text-4xl gold-text font-bold">02</div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold mb-2 uppercase">Trening vođen stručnjacima</h3>
+                            <p class="text-gray-700">Programi kreirani od strane stručnjaka za pokret kako bi ostao snažan, mobilan i otporan na ozljede.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="font-heading text-4xl gold-text font-bold">03</div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold mb-2 uppercase">Održivi rezultati</h3>
+                            <p class="text-gray-700">Izgradi navike koje će ti omogućiti kvalitetno kretanje desetljećima, a ne samo nekoliko tjedana.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcija: Da li je Movement LAB za tebe? -->
+    <section id="za-koga" class="py-24 bg-[#111111] text-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex flex-col items-center text-center">
+                <h2 class="font-heading text-4xl md:text-6xl font-bold mb-10 uppercase italic leading-tight">
+                    DA LI JE MOVEMENT LAB <br class="hidden md:block"> <span class="gold-text">ZA TEBE?</span>
+                </h2>
+                <div class="w-20 h-1 gold-bg mb-12"></div>
+                
+                <div class="space-y-8 text-lg md:text-xl font-light leading-relaxed text-gray-300">
+                    <p>
+                        <strong class="text-white">Movement LAB</strong> je stručno dizajniran sustav treninga mobilnosti od kojeg koristi mogu imati pojedinci svih dobi, razina vještina i predznanja. 
+                    </p>
+                    <p>
+                        Bez obzira jesi li mlad ili star, tek započinješ svoje fitness putovanje ili si već iskusni sportaš, ovaj trening će podići funkciju tvojih zglobova i kapacitet pokreta na novu razinu, pojačavajući tvoj sportski performans u <strong class="italic text-white underline decoration-gold">svim</strong> fizičkim aktivnostima.
+                    </p>
+                    <p>
+                        Od dizanja utega i cardia do calisthenicsa, raznih sportova i svakodnevnih aktivnosti, <span class="gold-text font-medium italic">Izvanredna Mobilnost</span> nas osnažuje da otključamo svoj pravi potencijal. 
+                    </p>
+                    <p class="bg-white/5 p-8 border-l-4 border-gold italic">
+                        "U svojoj srži, naša sposobnost kretanja definira našu kvalitetu života. Imamo moć nadvladati svoja ograničenja u kretanju, što vodi do života s manje prepreka i većom slobodom."
+                    </p>
+                    <p class="pt-6">
+                        Ako si spreman prigrliti život s više mogućnosti, <strong class="text-white">Movement LAB by Ivan Babić</strong> tvoj je put prema tom izvanrednom putovanju.
+                    </p>
+                </div>
+
+                <div class="mt-16">
+                    <a href="#clanarina" class="btn-transition inline-flex items-center gap-3 border-b-2 border-gold pb-2 gold-text font-bold uppercase tracking-widest hover:text-white hover:border-white">
+                        Odaberi svoj paket i kreni <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonijali -->
+    <section id="rezultati" class="py-24 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl md:text-6xl font-bold mb-4 uppercase italic text-white">Stvarni ljudi, <span class="gold-text">stvarni rezultati</span></h2>
+                <p class="text-gray-500 uppercase tracking-widest text-xs">Pogledaj iskustva onih koji su već unaprijedili svoju anatomiju</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative bg-[#1A1A1A] rounded-xl border border-white/10 p-4 transform transition hover:scale-[1.02]">
+                    <div class="aspect-[9/16] bg-neutral-900 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="photo_2026-05-06_12-03-29.jpg" 
+                             onerror="this.parentElement.innerHTML='<div class=\'text-gold text-xs text-center p-4\'>[Slika klijenta 1]</div>'"
+                             alt="[Slika testimonijala 1]" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <div class="relative bg-[#1A1A1A] rounded-xl border border-white/10 p-4 transform transition hover:scale-[1.02]">
+                    <div class="aspect-[9/16] bg-neutral-900 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="photo_2026-05-06_12-03-26.jpg" 
+                             onerror="this.parentElement.innerHTML='<div class=\'text-gold text-xs text-center p-4\'>[Slika klijenta 2]</div>'"
+                             alt="[Slika testimonijala 2]" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <div class="relative bg-[#1A1A1A] rounded-xl border border-white/10 p-4 transform transition hover:scale-[1.02]">
+                    <div class="aspect-[9/16] bg-neutral-900 rounded-lg flex items-center justify-center overflow-hidden">
+                        <img src="photo_2026-05-06_12-03-59.jpg" 
+                             onerror="this.parentElement.innerHTML='<div class=\'text-gold text-xs text-center p-4\'>[Slika klijenta 3]</div>'"
+                             alt="[Slika testimonijala 3]" class="w-full h-full object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcija: Što dobivaš unutar članarine -->
+    <section id="pogodnosti" class="py-24 bg-white text-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl md:text-6xl font-bold mb-4 uppercase italic leading-none">ŠTO DOBIVAŠ UNUTAR <span class="gold-text">ČLANARINE?</span></h2>
+                <p class="text-gray-600 uppercase tracking-widest text-xs font-bold">Kompletan sustav za tvoju tjelesnu transformaciju</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="unlock" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Unlimited pristup</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Potpuni i neograničeni pristup cjelokupnom video sadržaju i bazi znanja 24/7.</p>
+                </div>
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="languages" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Domaći sadržaj</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Svi treninzi i edukacijski materijali su snimljeni na hrvatskom jeziku radi lakšeg praćenja.</p>
+                </div>
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="map" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Jasna struktura</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Hodogram treninga za sve nove korisnike kako bi točno znao odakle krenuti bez nagađanja.</p>
+                </div>
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="refresh-cw" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Redovite objave</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Svaki mjesec dodajemo nove treninge kako bi tvoj napredak ostao konstantan i zanimljiv.</p>
+                </div>
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="users" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">LAB Zajednica</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Postani dio rastuće Movement LAB zajednice ljudi koji dijele tvoje ciljeve i strast.</p>
+                </div>
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="message-square" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Feedback trenera</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Izravna dostupnost trenera za tvoja pitanja, nedoumice i korekciju tehnike izvođenja.</p>
+                </div>
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="monitor-smartphone" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Multi-device</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Treniraj s bilo kojeg uređaja — laptopa, tableta ili mobitela, bilo gdje i bilo kada.</p>
+                </div>
+                <div class="benefit-card border border-neutral-100 p-8 rounded-lg transition-all">
+                    <i data-lucide="brain-circuit" class="w-8 h-8 gold-text mb-6"></i>
+                    <h3 class="font-heading text-xl font-bold mb-3 uppercase">Doživotna edukacija</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Ne dobivaš samo vježbe, već učiš biomehaniku vlastitog tijela za rezultate koji ostaju.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcija: Članarina (Cjenik) -->
+    <section id="clanarina" class="py-24 bg-[#1A1A1A] border-y border-white/5">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+            <h2 class="font-heading text-4xl md:text-6xl font-bold mb-16 uppercase italic">ODABERI SVOJU <span class="gold-text">ČLANARINU</span></h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Mjesečna -->
+                <div class="bg-black p-10 border border-white/10 hover:border-[#C5A048] transition-all group flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-heading text-2xl font-bold mb-2 uppercase">Mjesečna</h3>
+                        <div class="text-[10px] tracking-[0.2em] text-gray-500 mb-8 uppercase italic">Tvoj fleksibilni pristup</div>
+                        
+                        <div class="mb-8">
+                            <span class="text-5xl font-bold font-heading gold-text">29€</span>
+                            <span class="text-gray-500 text-sm">/ mjesečno</span>
+                        </div>
+                    </div>
+
+                    <a href="https://buy.stripe.com/6oU9AU1KudTp8by4J46kg0r" class="block w-full gold-bg text-black font-heading font-bold py-4 hover:brightness-110 transition-all uppercase tracking-widest text-center">
+                        Započni odmah
+                    </a>
+                </div>
+
+                <!-- Tromjesečna -->
+                <div class="bg-black p-12 border-2 border-[#C5A048] relative overflow-hidden group flex flex-col justify-between scale-105 shadow-2xl">
+                    <div class="absolute top-0 right-0 gold-bg text-black text-[10px] font-bold px-8 py-1 uppercase transform rotate-45 translate-x-8 translate-y-3">Najpopularnije</div>
+                    
+                    <div>
+                        <h3 class="font-heading text-3xl font-bold mb-2 uppercase italic text-gold">Tromjesečna</h3>
+                        <div class="text-[10px] tracking-[0.2em] text-gray-300 mb-8 uppercase font-bold">Tvoj maksimalni napredak</div>
+                        
+                        <div class="mb-8">
+                            <span class="text-6xl font-bold font-heading text-white">78.30€</span>
+                            <div class="text-gold text-xs mt-1 font-bold uppercase tracking-widest">Uštedi 10% odmah</div>
+                        </div>
+                    </div>
+
+                    <a href="https://buy.stripe.com/fZu9AU88Sg1x3Vib7s6kg0s" class="block w-full gold-bg text-black font-heading font-bold py-5 hover:brightness-110 transition-all uppercase tracking-widest text-center shadow-lg">
+                        Uštedi odmah
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Sekcija -->
+    <section id="kontakt" class="py-24 bg-white text-black">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="font-heading text-4xl md:text-6xl font-bold mb-8 uppercase italic leading-none text-black">IMAŠ <span class="gold-text">PITANJA?</span></h2>
+            <p class="text-lg text-gray-600 mb-12 italic">Tu sam da ti pomognem u tvom procesu transformacije. Javi mi se putem bilo kojeg kanala ispod.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-black">
+                <!-- Osobni Instagram -->
+                <a href="https://instagram.com/bodyweightalkemicar" target="_blank" class="flex flex-col items-center p-8 bg-neutral-50 border border-neutral-100 hover:border-gold transition-all group rounded-xl">
+                    <img src="https://ui-avatars.com/api/?name=Bodyweight+Alkemicar&background=C5A048&color=fff"
+                         alt="[Osobni profil slika]" class="contact-img group-hover:scale-110 transition-transform">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="instagram" class="w-4 h-4 gold-text"></i>
+                        <span class="text-[10px] uppercase tracking-widest font-bold">Osobni profil</span>
+                    </div>
+                    <span class="text-sm font-medium">@bodyweightalkemicar</span>
+                </a>
+
+                <!-- MovementLAB Instagram -->
+                <a href="https://instagram.com/movementlab.rijeka" target="_blank" class="flex flex-col items-center p-8 bg-neutral-50 border border-neutral-100 hover:border-gold transition-all group rounded-xl">
+                    <img src="https://ui-avatars.com/api/?name=Movement+LAB&background=C5A048&color=fff"
+                         alt="[MovementLAB profil slika]" class="contact-img group-hover:scale-110 transition-transform">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="instagram" class="w-4 h-4 gold-text"></i>
+                        <span class="text-[10px] uppercase tracking-widest font-bold">MovementLAB Profil</span>
+                    </div>
+                    <span class="text-sm font-medium">@movementlab.rijeka</span>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:movementlab.ri@gmail.com" class="flex flex-col items-center p-8 bg-neutral-50 border border-neutral-100 hover:border-gold transition-all group rounded-xl">
+                    <div class="contact-img flex items-center justify-center bg-neutral-100 group-hover:scale-110 transition-transform">
+                        <i data-lucide="mail" class="w-10 h-10 gold-text"></i>
+                    </div>
+                    <div class="flex items-center gap-2 mb-2">
+                        <i data-lucide="mail" class="w-4 h-4 gold-text"></i>
+                        <span class="text-[10px] uppercase tracking-widest font-bold">E-mail adresa</span>
+                    </div>
+                    <span class="text-sm font-medium">movementlab.ri@gmail.com</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 border-t border-white/5 text-center bg-[#111111]">
+        <div class="text-2xl gold-text mb-2">
+            <span class="font-brand-thin">Movement</span><span class="font-brand-bold italic">LAB</span>
+        </div>
+        <div class="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-10 italic">Upgrade Your Anatomy</div>
+        <p class="text-gray-700 text-[10px] uppercase tracking-[0.2em]">
+            © 2026 MovementLAB. Sva prava pridržana. <br>
+            Online pretplata za tvoju mobilnost vrhunskog standarda.
+        </p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
