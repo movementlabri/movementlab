@@ -41,15 +41,8 @@
     <!-- NAVIGACIJA -->
     <header class="fixed top-0 left-0 w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-white/5">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3 group">
-                <img src="ml-logo.png" alt="Movement LAB Logo" class="h-10 w-10 object-contain rounded-full border border-gold/30 group-hover:border-gold transition duration-300">
-                <span class="font-heading text-2xl font-normal tracking-wider gold-text">MovementLAB</span>
-            </a>
-            <div>
-                <a href="#clanarina" class="btn-transition px-6 py-2.5 rounded-none border border-gold gold-text text-xs font-bold uppercase tracking-widest hover:bg-gold hover:text-black">
-                    Članarina
-                </a>
-            </div>
+
+
         </div>
     </header>
 
@@ -61,6 +54,9 @@
 
         <div class="relative z-10 max-w-5xl mx-auto px-6 w-full flex flex-col items-center text-center">
 
+            <div class="mb-8">
+                <img src="movement_lab_logo.jpg" alt="Movement LAB Logo" class="h-16 w-16 object-contain rounded-full border border-gold/30 mx-auto">
+            </div>
             <h1 class="font-heading text-4xl sm:text-5xl md:text-7xl font-light gold-text leading-[1.1] uppercase tracking-tight mb-12">
                 UNAPRIJEDI SVOJU <br><span class="font-normal">ANATOMIJU</span>
             </h1>
@@ -102,7 +98,7 @@
             </div>
 
             <p class="text-base sm:text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-12 max-w-3xl mx-auto">
-                Prestani samo preživljavati u svom tijelu. Otključaj puni potencijal svog biološkog hardvera, riješi se ukočenosti i vrati potpunu slobodu kretanja bez beskonačnog nagađanja po youtube-u.
+                Prestani samo preživljavati u svom tijelu. Otključaj puni potencijal svog biološkog hardvera, riješi se ukočenosti i vrati potpunu slobodu kretanja <br class="hidden sm:block"><span class="gold-text font-bold">bez beskonačnog nagađanja po youtube-u.</span>
             </p>
 
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full sm:w-auto">
@@ -418,7 +414,7 @@
                     <div class="relative w-full aspect-[4/5] bg-[#0D0D0D] border border-white/5 overflow-hidden group">
                         <!-- Zamijeni src="ivan.jpg" sa svojom fotografijom -->
                         <img src="ivan.jpg" alt="Ivan, Movement LAB trener"
-                             class="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition duration-700"
+                             class="w-full h-full object-cover object-top transition duration-700"
                              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <!-- Placeholder dok nema slike -->
                         <div class="absolute inset-0 hidden flex-col items-center justify-center gap-4 border border-dashed border-white/10">
@@ -431,19 +427,15 @@
                     </div>
 
                     <!-- Stats -->
-                    <div class="grid grid-cols-1 gap-px border border-white/5">
-                        <div class="bg-[#0D0D0D] p-8 border-b border-white/5 hover:bg-[#111] transition duration-300">
-                            <p class="font-heading text-5xl sm:text-6xl font-light gold-text tracking-tight mb-2">150+</p>
-                            <p class="text-[11px] text-gray-500 uppercase tracking-[0.2em] font-light">klijenata osobno transformiranih uživo</p>
+                    <div class="grid grid-cols-2 gap-px border border-white/5">
+                        <div class="bg-[#0D0D0D] p-5 hover:bg-[#111] transition duration-300 text-center">
+                            <p class="font-heading text-3xl font-light gold-text tracking-tight mb-2">150+</p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-[0.15em] font-light leading-relaxed">klijenata uživo</p>
                         </div>
-                        <div class="bg-[#0D0D0D] p-8 border-b border-white/5 hover:bg-[#111] transition duration-300">
-                            <p class="font-heading text-5xl sm:text-6xl font-light text-white tracking-tight mb-2">80</p>
-                            <p class="text-[11px] text-gray-500 uppercase tracking-[0.2em] font-light leading-relaxed">aktivnih članova online platforme</p>
-                            <p class="text-[9px] text-gray-600 uppercase tracking-[0.15em] mt-1">ažurirano 05/26</p>
-                        </div>
-                        <div class="bg-[#0D0D0D] p-8 hover:bg-[#111] transition duration-300">
-                            <p class="font-heading text-5xl sm:text-6xl font-light text-white tracking-tight mb-2">0</p>
-                            <p class="text-[11px] text-gray-500 uppercase tracking-[0.2em] font-light">slobodnih mjesta u dvorani &mdash; upis s liste čekanja</p>
+                        <div class="bg-[#0D0D0D] p-5 hover:bg-[#111] transition duration-300 text-center border-l border-white/5">
+                            <p class="font-heading text-3xl font-light gold-text tracking-tight mb-2">86</p>
+                            <p class="text-[10px] text-gray-500 uppercase tracking-[0.15em] font-light leading-relaxed">aktivnih online članova</p>
+                            <p class="text-[9px] text-gray-600 uppercase tracking-[0.12em] mt-1">ažurirano 05/26</p>
                         </div>
                     </div>
 
